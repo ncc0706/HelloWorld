@@ -8,13 +8,39 @@
     android:background="#8b886c"
     tools:context="com.xlinyu.helloworld.MainActivity">
 
-    <TextView
-        android:text="哈哈"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvGetMoney"/>
+        android:id="@+id/etGoaldMoney"
+        android:inputType="number"
+        android:hint="请如输入您的第一桶金的金额"
+        android:layout_margin="10px"/>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击一次赚一元"
+        android:background="#BBFF00"
+        android:layout_margin="10px"
+        android:id="@+id/btnGetMoney"/>
 
     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="点击一次损失一元"
+        android:background="#FF0000"
+        android:id="@+id/btnLoseMoney"/>
+
+    <TextView
+        android:text="哈哈,经过努力目前我已经有了...元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/tvGetMoney"/>
+
+    <!--<Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击一次赚一元"
@@ -24,6 +50,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="点击一次损失一元"
-        android:id="@+id/btnLoseMoney"/>
+        android:id="@+id/btnLoseMoney"/>-->
 
 </LinearLayout>
