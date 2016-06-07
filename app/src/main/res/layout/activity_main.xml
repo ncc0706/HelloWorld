@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#8b886c"
     tools:context="com.xlinyu.helloworld.MainActivity">
 
     <TextView
@@ -16,7 +17,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="点击一次赚已元"
+        android:text="点击一次赚一元"
         android:id="@+id/btnGetMoney"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击一次损失一元"
+        android:id="@+id/btnLoseMoney"/>
 
 </LinearLayout>
