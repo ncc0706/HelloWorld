@@ -1,55 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BBFF"
     android:orientation="vertical"
-    android:background="#8b886c"
     tools:context="com.xlinyu.helloworld.MainActivity">
 
-    <EditText
-        android:layout_width="fill_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etGoaldMoney"
-        android:inputType="number"
-        android:hint="请如输入您的第一桶金的金额"
-        android:layout_margin="10px"/>
-    
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="点击一次赚一元"
-        android:background="#BBFF00"
-        android:layout_margin="10px"
-        android:id="@+id/btnGetMoney"/>
+        android:background="#00FFBB"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="点击一次损失一元"
-        android:background="#FF0000"
-        android:id="@+id/btnLoseMoney"/>
+        <EditText
+            android:id="@+id/etGoaldMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:hint="请如输入您的第一桶金的金额"
+            android:inputType="none" />
 
-    <TextView
-        android:text="哈哈,经过努力目前我已经有了...元"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#0000FF"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:id="@+id/tvGetMoney"/>
+        <Button
+            android:id="@+id/btnGetMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:background="#BBFF00"
+            android:text="点击一次赚一元" />
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点击一次赚一元"
-        android:id="@+id/btnGetMoney"/>
+        <Button
+            android:id="@+id/btnLoseMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="点击一次损失一元" />
 
-    <Button
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvGetMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="哈哈,经过努力目前我已经有了...元"
+            android:textColor="#0000FF"
+            android:textSize="20dp" />
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击一次赚一元"
+            android:id="@+id/btnGetMoney"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击一次损失一元"
+            android:id="@+id/btnLoseMoney"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点击一次损失一元"
-        android:id="@+id/btnLoseMoney"/>-->
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CCTV调查你是幸福的吗？"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/rgCCTVSuvery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbSoHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="幸福" />
+
+            <RadioButton
+                android:id="@+id/rbNoHappy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不幸福" />
+
+            <RadioButton
+                android:id="@+id/rbNiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="妞妞" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CCTV调查--你平时的户外活动是什么??"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbLOL"
+            android:text="宿舍LOL"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbGrilFriend"
+            android:text="陪女友逛街"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cbCodingMoney"
+            android:text="苦逼搬砖"
+            android:checked="true"/>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
